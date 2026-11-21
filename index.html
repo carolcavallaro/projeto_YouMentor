@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouMentor | Co-piloto de Creators — YouShop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-group">
+      <div class="brand-badge">YOUSHOP</div>
+      <div class="brand-title">
+        <h1>YouMentor <span class="pill">MCP + IA</span></h1>
+        <p>Co-piloto pedagógico e de conformidade para creators iniciantes</p>
+      </div>
+    </div>
+
+    <div class="product-bar">
+      <label for="produtoSelect">Produto da campanha:</label>
+      <select id="produtoSelect"></select>
+      <span id="comissaoChip" class="meta-chip">Comissão: --</span>
+      <span id="cookieChip" class="meta-chip">Cookie: --</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Coluna principal -->
+    <section class="card">
+      <div class="tabs">
+        <button class="tab-btn active" type="button" data-tab="mentorTab">Mentor (Texto &amp; Voz)</button>
+        <button class="tab-btn" type="button" data-tab="revisorTab">Revisor de Roteiro &amp; Compliance</button>
+      </div>
+
+      <!-- Aba 1: Mentor -->
+      <div id="mentorTab" class="tab-panel active">
+        <div class="quick-prompts">
+          <button class="chip-btn" type="button" data-prompt="Como funciona minha comissão e o link rastreável desse produto?">
+            Comissão e link
+          </button>
+          <button class="chip-btn" type="button" data-prompt="Quais regras de divulgação eu preciso respeitar para não errar?">
+            Regras da marca
+          </button>
+          <button class="chip-btn" type="button" data-prompt="Me dê sugestões de roteiro para o meu primeiro vídeo divulgar esse produto.">
+            Ideias de roteiro
+          </button>
+        </div>
+
+        <div id="chatBox" class="chat-box">
+          <div class="msg bot">
+            Olá! Eu sou o <strong>YouMentor</strong>. Posso tirar dúvidas sobre comissão, links e regras de divulgação, ajudar com ideias de conteúdo e revisar seus rascunhos antes de ir ao ar. Você pode digitar ou falar pelo microfone!
+          </div>
+        </div>
+
+        <div class="chat-controls">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Digite sua dúvida ou clique em Falar..."
+            autocomplete="off"
+          />
+          <button id="voiceBtn" type="button" class="btn-voice">Falar</button>
+          <button id="sendBtn" type="button" class="btn-primary">Enviar</button>
+        </div>
+        <div id="voiceStatus" class="voice-status"></div>
+      </div>
+
+      <!-- Aba 2: Agente Revisor de Roteiro & Compliance -->
+      <div id="revisorTab" class="tab-panel">
+        <div class="quick-prompts">
+          <button id="exemploAlertaBtn" class="chip-btn" type="button">
+            Exemplo com alertas
+          </button>
+          <button id="exemploBomBtn" class="chip-btn" type="button">
+            Exemplo dentro das normas
+          </button>
+        </div>
+
+        <div id="revisorChatBox" class="chat-box">
+          <div class="msg bot">
+            Olá! Sou o agente de <strong>Compliance e Roteiros</strong> do YouMentor. Envie o seu roteiro ou legenda aqui embaixo para eu avaliar se está dentro das normas da campanha, apontar ajustes e sugerir melhorias.
+          </div>
+        </div>
+
+        <div class="chat-controls">
+          <textarea
+            id="roteiroInput"
+            rows="2"
+            placeholder="Digite ou cole seu roteiro/legenda e clique em Enviar..."
+          ></textarea>
+          <button id="revisarBtn" type="button" class="btn-primary">Enviar</button>
+        </div>
+        <div id="revisorStatus" class="voice-status"></div>
+      </div>
+    </section>
+
+    <!-- Coluna lateral: Inspector MCP -->
+    <aside class="card side-card">
+      <h2>
+        Inspector MCP
+        <span id="azureBadge" class="tool-tag">Verificando...</span>
+      </h2>
+      <p class="desc">
+        Ferramentas expostas pelo <code>YouMentor-MCP-Server</code> em Python. As destacadas em verde foram acionadas na última consulta.
+      </p>
+
+      <div id="motorAtual" class="engine-pill">Motor: aguardando interação</div>
+
+      <div id="toolList" class="tool-list"></div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
