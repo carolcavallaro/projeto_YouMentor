@@ -23,7 +23,7 @@ Protótipo desenvolvido para o desafio do **Programa de Estágio YouShop 2027**,
 
 ## Página do Projeto (GitHub Pages)
 
-O projeto conta com uma página publicada no **GitHub Pages** (`https://carolcavallaro.github.io/projeto_YouMentor/`) que serve para visualizar as funcionalidades, a proposta e a estrutura do **YouMentor** diretamente no navegador, de forma estática e **sem necessidade de conexão com o servidor Flask** ou execução local do back-end. Para testar os endpoints dinâmicos em tempo real com Python/Flask, siga o passo a passo de execução local abaixo.
+O projeto conta com uma página publicada no **GitHub Pages** que serve para visualizar as funcionalidades, a proposta e a estrutura do **YouMentor** diretamente no navegador, de forma estática e **sem necessidade de conexão com o servidor Flask** ou execução local do back-end. Para acessar a página, [clique aqui](https://carolcavallaro.github.io/projeto_YouMentor/). Para testar os endpoints dinâmicos em tempo real com Python/Flask, siga o passo a passo de execução local abaixo.
 
 ## Como Rodar Localmente
 
