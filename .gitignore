@@ -1,0 +1,11 @@
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configurações locais do editor
+.vscode/
+
+# Ambiente virtual (caso exista localmente)
+.venv/
+venv/
