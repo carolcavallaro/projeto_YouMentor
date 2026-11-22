@@ -19,6 +19,11 @@ Protótipo desenvolvido para o desafio do **Programa de Estágio YouShop 2027**,
 - `styles.css` — Estilos visuais da aplicação
 - `app.js` — Lógica de interface, chamadas à API, síntese/reconhecimento de voz no navegador e atualização do Inspector MCP
 - `requirements.txt` — Dependências Python (`flask`, `openai`, `mcp<2`, `python-dotenv`)
+- `docs/index.html` — Página estática publicada via GitHub Pages para demonstração visual das funcionalidades sem conexão com o Flask
+
+## Página do Projeto (GitHub Pages)
+
+O projeto conta com uma página publicada no **GitHub Pages** (`https://carolcavallaro.github.io/projeto_YouMentor/`) que serve para visualizar as funcionalidades, a proposta e a estrutura do **YouMentor** diretamente no navegador, de forma estática e **sem necessidade de conexão com o servidor Flask** ou execução local do back-end. Para testar os endpoints dinâmicos em tempo real com Python/Flask, siga o passo a passo de execução local abaixo.
 
 ## Como Rodar Localmente
 
