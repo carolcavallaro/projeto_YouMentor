@@ -40,8 +40,6 @@ Protótipo desenvolvido para o desafio do **Programa de Estágio YouShop 2027**,
 - **Jornada do creator e FAQ em vídeo:** tela de autenticação/login prévia, regras ainda mais aderentes à operação real da YouShop e biblioteca de FAQ com vídeos explicativos reproduzíveis diretamente no chat.
 - **Governança e revisão humana:** orientações automatizadas têm caráter educativo e não substituem validação jurídica, contratual ou aprovação final da marca.
 
----
-
 ## Autoria
 
 Desenvolvido por **Carolina Cavallaro**.
